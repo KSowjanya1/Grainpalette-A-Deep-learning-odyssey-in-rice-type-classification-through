@@ -1,0 +1,17 @@
+🧠 GrainPalette: Rice Type Classification – Python Code
+📁 Project Structure:
+mathematica
+Copy
+Edit
+grainpalette/
+│
+├── dataset/
+│   ├── Basmati/
+│   ├── Jasmine/
+│   ├── Arborio/
+│   ├── Brown/
+│   └── White/
+│
+├── grain_classifier.py
+├── requirements.txt
+└── README.md
