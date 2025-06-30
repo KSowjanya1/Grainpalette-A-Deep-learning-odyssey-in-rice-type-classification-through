@@ -1,0 +1,25 @@
+4. Model Architecture
+A sample CNN architecture:
+
+python
+Copy
+Edit
+model = Sequential([
+    Conv2D(32, (3, 3), activation='relu', input_shape=(128, 128, 3)),
+    MaxPooling2D(2, 2),
+    
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+
+    Conv2D(128, (3, 3), activation='relu'),
+    MaxPooling2D(2, 2),
+
+    Flatten(),
+    Dense(128, activation='relu'),
+    Dropout(0.5),
+    Dense(num_classes, activation='softmax')
+])
+Compile with: optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy']
+
+Train over 10–20 epochs with early stopping.
+
